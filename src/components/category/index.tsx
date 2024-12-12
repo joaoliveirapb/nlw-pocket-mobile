@@ -9,7 +9,12 @@ type CategoryProps = PressableProps & {
   isSelected?: boolean
 }
 
-export function Category({ name, iconId, isSelected = false, ...rest }: CategoryProps) {
+export function Category({
+  name,
+  iconId,
+  isSelected = false,
+  ...rest
+}: CategoryProps) {
   const Icon = categoriesIcons[iconId]
 
   return (
